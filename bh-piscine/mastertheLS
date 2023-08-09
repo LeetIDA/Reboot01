@@ -1,0 +1,10 @@
+#!/bin/bash
+#? -m Displays Files names as acoomma-separated list.
+#? -t Sorts the list by modification time * newest files first.
+#* sed invokes the stream editor.
+#! 's' indicates a substitution.
+#? '/' Separates the parts of the command.
+#? ' '(space) The Pattern to be Replaced.
+#? '/' Separates the pattern to replace with the replacement.
+#! 'g'  replace all occurrences.
+ls -mt | sed ' s/ //g'
