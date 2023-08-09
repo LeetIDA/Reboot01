@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#* Find for files start with a
+find . -type f -name "a*" -print
+
+#* Find for files end with z
+find . -type f -name "*z" -print
+
+#* Find for files start with (z) and end with (a!)
+find . -type f -name "z*a!" -print
